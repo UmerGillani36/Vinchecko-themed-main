@@ -1,0 +1,27 @@
+.price {
+  margin-top: 5rem;
+  border-radius: 0;
+  padding: 0px !important;
+  background: #fdf3f2;
+}
+.price-row {
+  gap: 0;
+}
+.price-heading {
+  max-width: 1000px;
+  font-weight: 700;
+}
+.price-section h2 {
+  font-size: 2.3em;
+}
+
+.price .circle-animation,
+.row .circle-animation-b {
+  position: absolute;
+  height: 30vh;
+  width: 35vh;
+  filter: blur(80px);
+  border-radius: 100%;
+  background-color: #ee6c4d;
+  z-index: 9;
+}
