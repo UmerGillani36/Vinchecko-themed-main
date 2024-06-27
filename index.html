@@ -122,12 +122,12 @@
               </ul>
             </div>
             <div class="quote_btn-container">
-              <a href="">
-                <span> Sign up </span>
-              </a>
-              <a href="">
-                <span> Log in </span>
-              </a>
+              <div class="service-more-btn">
+                <button>
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Sample Report
+                </button>
+              </div>
             </div>
           </div>
         </nav>
@@ -321,85 +321,304 @@
     </main>
     <!-- About End -->
 
-    <!-- Service Start -->
-    <div class="service">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2>WHAT PROVIDES THE MOST COMPREHENSIVE UP-TO-DATE CAR REPORT?</h2>
+    <!-- Pricing Start -->
+    <div class="price">
+      <div class="price-container">
+        <span class="circle-animation" id="header-circle"></span>
+
+        <div class="price-section section-header text-center">
+          <h2 class="price-heading">SIMPLE PRICING - BEST VALUE FOR MONEY</h2>
           <p>
-            VinDocs vehicle history report bridges the market transparency gap
-            between used car buyers and sellers. What we check:
+            We are certain that VinDocs provides the best value for money after
+            analyzing competitors. The most important aspect of a second hand
+            car is the history, and VinDocs takes the guesswork out of it by
+            providing the most comprehensive, up-to-date and insightful history
+            reports, where we also check accident history of a car.
           </p>
         </div>
-        <div class="row">
-          <div class="service-item col-lg-4 col-md-6">
-            <div>
-              <i class="fa-solid fa-car-burst"></i>
+        <div class="price-row">
+          <div class="col-md-4">
+            <div class="price-item">
+              <div class="price-header basic">
+                <h3>Basic Package</h3>
+              </div>
+              <div class="price-body">
+                <span class="reports" id="now">1 report</span>
+                <div class="img-container">
+                  <img
+                    src="https://vindocs.com/_next/image?url=%2FsingleCars.png&w=1920&q=75"
+                    alt=""
+                  />
+                </div>
+                <span id="prices">
+                  <span class="rate">$15.99</span>
+                  <span id="now">for 1 report</span>
+                </span>
+                <div class="packages-list">
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Vehicle Overview</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Market Value</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Vehicle Specifications</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Sales Listing</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Accident Record</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Salvage</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Active/Expire Warranty</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-times package-times-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name"> HQ Car Images</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-times package-times-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Theft Record</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-times package-times-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Title Record</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-times package-times-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Impounds</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-times package-times-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Exports</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-times package-times-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Open Recalls</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-times package-times-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name"
+                      >Installed Options and Packages</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3>DAMAGES</h3>
-            <p>
-              Discover hidden damages and previous repairs with our detailed
-              reports, ensuring your vehicle purchase is safe and
-              value-accurate.
-            </p>
           </div>
-          <div class="service-item col-lg-4 col-md-6">
-            <div>
-              <i class="fa-solid fa-gear"></i>
+          <div class="col-md-4">
+            <div class="price-item">
+              <div class="price-header orange">
+                <h3>SAVE 25%</h3>
+              </div>
+              <div class="price-body">
+                <span class="reports" id="now">2 reports</span>
+                <div class="img-container">
+                  <img
+                    src="https://vindocs.com/_next/image?url=%2FbundleCars.png&w=1920&q=75"
+                    alt=""
+                  />
+                </div>
+                <span id="prices">
+                  <div>
+                    <span class="rate">$8.8</span
+                    ><span class="per">/report</span>
+                  </div>
+                  <div class="sale">
+                    <span id="now">pay $21.99</span><span id="was">$31.98</span>
+                  </div>
+                </span>
+                <div class="packages-list">
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Vehicle Overview</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Market Value</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Vehicle Specifications</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Sales Listing</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Accident Record</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Salvage</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Active/Expire Warranty</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name"> HQ Car Images</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Theft Record</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Title Record</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Impounds</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Exports</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name">Open Recalls</span>
+                  </div>
+                  <div class="package">
+                    <i
+                      class="fa fa-check package-check-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="package-name"
+                      >Installed Options and Packages</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3>SERVICE (MAINTENANCE) HISTORY & RECALLS</h3>
-            <p>
-              Access in-depth service history and recall information, empowering
-              you to make an informed, safe vehicle purchase decision.
-            </p>
           </div>
-          <div class="service-item col-lg-4 col-md-6">
-            <div>
-              <i class="fa-solid fa-tag"></i>
+          <div class="col-md-4">
+            <div class="price-item" id="third">
+              <div class="price-header green">
+                <h3>SAVE 40%</h3>
+              </div>
+              <div class="price-body">
+                <span class="reports" id="now">5 reports</span>
+                <div class="img-container">
+                  <img
+                    src="https://vindocs.com/_next/image?url=%2FfiveCars.png&w=1920&q=75"
+                    alt=""
+                  />
+                </div>
+                <span id="prices">
+                  <div>
+                    <span class="rate">$8.8</span
+                    ><span class="per">/report</span>
+                  </div>
+                  <div class="sale">
+                    <span id="now">pay $43.99</span><span id="was">$79.95</span>
+                  </div>
+                </span>
+              </div>
             </div>
-            <h3>AVERAGE CAR VALUE</h3>
-            <p>
-              Determine the fair market value of your prospective car, aiding in
-              smarter negotiation and a confident purchase.
-            </p>
           </div>
-          <div class="service-item col-lg-4 col-md-6">
-            <div>
-              <i class="fa-solid fa-people-robbery"></i>
-            </div>
-            <h3>STOLEN VEHICLE CHECK</h3>
-            <p>
-              Our stolen vehicle check provides peace of mind by ensuring your
-              chosen car is clear of any theft history.
-            </p>
-          </div>
-          <div class="service-item col-lg-4 col-md-6">
-            <div>
-              <i class="fa-solid fa-car-tunnel"></i>
-            </div>
-            <h3>ODOMETER ROLLBACK FRAUD & MILEAGE</h3>
-            <p>
-              Protect against odometer fraud with our thorough mileage
-              verification, ensuring you pay a fair price for the true value.
-            </p>
-          </div>
-          <div class="service-item col-lg-4 col-md-6">
-            <div>
-              <i class="fa-solid fa-car-tunnel"></i>
-            </div>
-            <h3>VEHICLE EQUIPMENT, CAR SPECS & MORE!</h3>
-            <p>
-              Uncover complete vehicle specifications and equipment details
-              through our VIN decoding service, for a fully informed purchase.
-            </p>
-          </div>
+          <span class="circle-animation-b" id="header-circle"></span>
         </div>
         <div class="service-more-btn">
-          <button>View Sample Report</button>
+          <button>Buy Now</button>
         </div>
       </div>
     </div>
-    <!-- Service End -->
+    <!-- Pricing End -->
 
     <!-- Facts Start -->
     <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
@@ -435,7 +654,7 @@
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="facts-item">
-              <i class="fa fa-check"></i>
+              <i class="fa package-check-icon"></i>
               <div class="facts-text">
                 <h3 data-toggle="counter-up">5000</h3>
                 <p>Projects Completed</p>
@@ -447,38 +666,6 @@
       </div>
     </div>
     <!-- Facts End -->
-    <!-- Banner -->
-    <div class="banner-b">
-      <div class="banner-background-img">
-        <div class="content">
-          <div class="left-content">
-            <span>Let's give you a spin</span>
-            <button class="btn btn-custom">
-              Book a call here
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-          <div class="right-content">
-            <div class="image-container">
-              <img class="banner-car-img" src="img/BannerImg.webp" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="usedBy">
-      <div class="content">
-        <span class="circle-animation" id="header-circle-a"></span>
-
-        <h1>
-          <i class="fa-solid fa-square-check"></i>
-          VINCHECKO IS USED BY:
-        </h1>
-        <p>Over <span>100,000 people</span> across <span>6+ countries</span></p>
-        <span class="circle-animation-b" id="header-circle-b"></span>
-      </div>
-    </div>
 
     <!-- Blog Start -->
     <div class="blog">
@@ -582,7 +769,18 @@
       </div>
     </div>
     <!-- Blog End -->
+    <div class="usedBy">
+      <div class="content">
+        <span class="circle-animation" id="header-circle-a"></span>
 
+        <h1>
+          <i class="fa-solid fa-square-check"></i>
+          VINCHECKO IS USED BY
+        </h1>
+        <p>Over <span>100,000 people</span> across <span>6+ countries</span></p>
+        <span class="circle-animation-b" id="header-circle-b"></span>
+      </div>
+    </div>
     <!-- Accordion Start (FAQs)  -->
     <div class="accordion-main">
       <div class="heading">
@@ -818,100 +1016,6 @@
       </div>
     </div>
     <!-- Accordion End (FAQs)  -->
-    <!-- Price Start -->
-    <div class="price">
-      <div class="price-container">
-        <span class="circle-animation" id="header-circle"></span>
-
-        <div class="price-section section-header text-center">
-          <h2 class="price-heading">SIMPLE PRICING - BEST VALUE FOR MONEY</h2>
-          <p>
-            We are certain that VinDocs provides the best value for money after
-            analyzing competitors. The most important aspect of a second hand
-            car is the history, and VinDocs takes the guesswork out of it by
-            providing the most comprehensive, up-to-date and insightful history
-            reports, where we also check accident history of a car.
-          </p>
-        </div>
-        <div class="price-row">
-          <div class="col-md-4">
-            <div class="price-item">
-              <div class="price-header basic">
-                <h3>Basic Package</h3>
-              </div>
-              <div class="price-body">
-                <span class="reports" id="now">1 report</span>
-                <div class="img-container">
-                  <img
-                    src="https://vindocs.com/_next/image?url=%2FsingleCars.png&w=1920&q=75"
-                    alt=""
-                  />
-                </div>
-                <span id="prices">
-                  <span class="rate">$15.99</span>
-                  <span id="now">for 1 report</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="price-item">
-              <div class="price-header orange">
-                <h3>SAVE 25%</h3>
-              </div>
-              <div class="price-body">
-                <span class="reports" id="now">2 reports</span>
-                <div class="img-container">
-                  <img
-                    src="https://vindocs.com/_next/image?url=%2FbundleCars.png&w=1920&q=75"
-                    alt=""
-                  />
-                </div>
-                <span id="prices">
-                  <div>
-                    <span class="rate">$8.8</span
-                    ><span class="per">/report</span>
-                  </div>
-                  <div class="sale">
-                    <span id="now">pay $21.99</span><span id="was">$31.98</span>
-                  </div>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="price-item" id="third">
-              <div class="price-header green">
-                <h3>SAVE 40%</h3>
-              </div>
-              <div class="price-body">
-                <span class="reports" id="now">5 reports</span>
-                <div class="img-container">
-                  <img
-                    src="https://vindocs.com/_next/image?url=%2FfiveCars.png&w=1920&q=75"
-                    alt=""
-                  />
-                </div>
-                <span id="prices">
-                  <div>
-                    <span class="rate">$8.8</span
-                    ><span class="per">/report</span>
-                  </div>
-                  <div class="sale">
-                    <span id="now">pay $43.99</span><span id="was">$79.95</span>
-                  </div>
-                </span>
-              </div>
-            </div>
-          </div>
-          <span class="circle-animation-b" id="header-circle"></span>
-        </div>
-        <div class="service-more-btn">
-          <button>Buy Now</button>
-        </div>
-      </div>
-    </div>
-    <!-- Price End -->
 
     <!-- Location Start -->
     <div class="location">

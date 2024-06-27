@@ -1290,33 +1290,40 @@ a:focus {
 }
 .service-more-btn {
   width: 100%;
-  height: 100px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
-  margin-top: 1rem;
 }
 .service-more-btn button {
   border-radius: 8px;
   background-color: transparent !important;
-  padding: 10px 30px 12px 30px;
+  padding: 5px 20px 5px 20px;
   border-radius: 7px;
   color: #333333;
   -webkit-box-align: center;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   transition: all 500ms ease 0s, width 0s ease 0s, height 0s ease 0s;
-  border: 3px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
   outline: none;
 }
 .service-more-btn button:hover {
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0);
   transform: scale(1.1);
   cursor: pointer;
   color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   box-shadow: inset 250px 0 0 #333333;
+}
+.fa-download {
+  color: #333333;
+  margin-right: 10px;
+}
+.service-more-btn button:hover .fa-download {
+  color: #fff;
 }
 
 @media (max-width: 1000px) {
@@ -1412,17 +1419,17 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 2.1rem;
+  /* padding-top: 2.1rem; */
   gap: 10px;
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
   /* overflow: hidden; */
   position: relative;
 }
 .flex-container p {
   width: 70%;
   color: #6b6b6b;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
 .flex-container #header-circle-b {
   position: absolute;
@@ -1663,7 +1670,7 @@ a:focus {
 
 .price .price-item {
   width: 25vw;
-  height: 50vh;
+  /* height: 50vh; */
   max-height: max-content;
   position: relative;
   margin-bottom: 30px;
@@ -1735,9 +1742,9 @@ a:focus {
 
 .price-body #prices {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 
 #prices .rate {
@@ -1768,6 +1775,32 @@ a:focus {
   color: #6b6b6b;
   text-decoration: line-through;
   font-weight: 700;
+}
+.packages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+}
+.package {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  gap: 10px;
+}
+.package-check-icon {
+  font-size: 18px;
+  color: green;
+}
+.package-times-icon {
+  font-size: 18px;
+  color: red;
+}
+.package-name {
+  font-size: 16px;
 }
 
 .price .price-item .price-footer .btn.btn-custom {
@@ -1956,10 +1989,9 @@ a:focus {
 /*  Banner */
 
 .usedBy {
-  margin-block: 1rem;
+  margin-top: 60px;
   background-color: #ffffff;
   height: 35vh;
-  /* color: #333333; */
 }
 .usedBy .content {
   height: 100%;
