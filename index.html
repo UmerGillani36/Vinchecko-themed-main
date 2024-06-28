@@ -123,10 +123,12 @@
             </div>
             <div class="quote_btn-container">
               <div class="service-more-btn">
-                <button>
-                  <i class="fa fa-download" aria-hidden="true"></i>
-                  Sample Report
-                </button>
+                <form method="get" action="/pdf/info.pdf" target="_blank">
+                  <button type="submit">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    Sample Report
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -138,35 +140,98 @@
             <div class="col-md-5">
               <div class="detail-box">
                 <h1>Research a Vehicle</h1>
-                <h1>By <span class="underline">VIN</span> Number</h1>
                 <p>
                   All existing data about used cars in the United States. Check
                   your future car on hidden defects, story and mileage. Enter
                   the VIN to get the most accurate and up-to-date car details,
                   specs, and history report.
                 </p>
-                <div class="input">
-                  <div class="form">
-                    <i
-                      id="modal-open"
-                      data-toggle="modal"
-                      data-target="#myModal"
-                      class="fa-solid fa-circle-question"
-                    ></i>
-                    <div class="inputbox">
+                <!-- form start-->
+                <div class="form">
+                  <div class="form_content">
+                    <span class="form_heading"
+                      >Receive Your Vehicle Report</span
+                    >
+                    <div class="form_row">
+                      <div class="form_input">
+                        <label for="name_input">Name*</label>
+                        <input
+                          type="text"
+                          id="name_input"
+                          placeholder="Enter your name"
+                        />
+                      </div>
+                      <div class="form_input">
+                        <label for="email_input">Email Address*</label>
+                        <input
+                          type="email"
+                          id="email_input"
+                          placeholder="Enter your email"
+                        />
+                      </div>
+                    </div>
+                    <div class="form_row">
+                      <div class="form_input">
+                        <label for="name_input">Phone Number*</label>
+                        <input
+                          type="text"
+                          id="name_input"
+                          placeholder="Enter your name"
+                        />
+                      </div>
+                      <div class="form_input">
+                        <label for="email_input">VIN Number*</label>
+                        <input
+                          type="email"
+                          id="email_input"
+                          placeholder="Enter your email"
+                        />
+                      </div>
+                    </div>
+                    <div class="form_input" style="width: 100%">
+                      <label for="email_input">VIN Number*</label>
                       <input
-                        id="input"
-                        required="required"
-                        type="text"
-                        maxlength="18"
+                        type="email"
+                        id="email_input"
+                        placeholder="Enter your email"
                       />
-                      <span>Enter VIN</span>
+                    </div>
+                    <div class="form_packages">
+                      <label>Select Package*</label>
+                      <div class="package_list">
+                        <input
+                          type="radio"
+                          id="basic"
+                          name="package"
+                          value="Basic"
+                        />
+                        <label for="basic">Basic Scan Vin -- $50</label>
+                      </div>
+                      <div class="package_list">
+                        <input
+                          type="radio"
+                          id="premium"
+                          name="package"
+                          value="Premium"
+                        />
+                        <label for="premium">Premium Check Vin -- $75</label>
+                      </div>
+                      <div class="package_list">
+                        <input
+                          type="radio"
+                          id="complete"
+                          name="package"
+                          value="Complete"
+                        />
+                        <label for="complete">Complete Care Vin -- $99</label>
+                      </div>
+                      <div class="form_action_container">
+                        <button class="form_action">Pay</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="chkButton">
-                    <button id="checkBtn">Check Now</button>
-                  </div>
                 </div>
+                <!-- form end-->
                 <div class="length-caution">
                   <span id="input-caution">VIN must be 17 characters long</span>
                 </div>
@@ -1345,6 +1410,7 @@
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
+    <script src="js/index.js"></script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
     <script src="modal.js"></script>
