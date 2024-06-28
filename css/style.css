@@ -634,6 +634,16 @@ a:focus {
     align-items: flex-start;
   }
 }
+.company_logo_container {
+  width: 100%;
+  padding: 50px 20px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
 /*******************************/
 /* **********Flag Slider********/
