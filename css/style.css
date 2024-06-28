@@ -610,7 +610,64 @@ a:focus {
   padding: 8px 12px;
   letter-spacing: 1.3px;
 }
+
 /*******************************/
+/* **********Flag Slider********/
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  background: transparent;
+  height: 110px;
+  padding: 5px 0px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 80px;
+  &::before,
+  &::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+
+  .slide {
+    height: 100px;
+    width: 250px;
+  }
+}
 /*******************************/
 /********** Hero CSS ***********/
 /*******************************/
@@ -1749,6 +1806,7 @@ a:focus {
 }
 
 .price .col-md-4 {
+  min-height: 720px;
   padding: 0 !important;
   display: flex;
   justify-content: center;
@@ -1862,6 +1920,7 @@ a:focus {
   text-decoration: line-through;
   font-weight: 700;
 }
+
 .packages-list {
   display: flex;
   flex-direction: column;
@@ -1870,7 +1929,7 @@ a:focus {
   padding: 0px 40px;
 }
 .package {
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
