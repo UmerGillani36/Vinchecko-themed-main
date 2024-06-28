@@ -53,6 +53,12 @@
       const handleBasicNavigate = () => {
         window.location.href = "https://buy.stripe.com/5kAbKG4WP5PlfUk28d";
       };
+      const handlePremiumNavigate = () => {
+        window.location.href = "https://buy.stripe.com/00g162cph7XteQg3ci";
+      };
+      const handleCompleteCareNavigate = () => {
+        window.location.href = "https://buy.stripe.com/6oEaGCfBt0v137y8wD";
+      };
       </script>
   </head>
 
@@ -490,7 +496,7 @@
           </p>
         </div>
         <div class="price-row">
-          <div class="col-md-4" onclick="handleBasicNavigate()">
+          <div class="col-md-4">
             <div class="price-item">
               <div class="price-header basic">
                 <h3>Basic Scan</h3>
@@ -609,6 +615,9 @@
                     >
                   </div>
                 </div>
+              </div>
+              <div onclick="handleBasicNavigate()" class="service-more-btn" style="margin-top: 20px; margin-bottom: 10px;">
+                <button>Buy Now</button>
               </div>
             </div>
           </div>
@@ -736,6 +745,9 @@
                     >
                   </div>
                 </div>
+              </div>
+              <div onclick="handlePremiumNavigate()" class="service-more-btn" style="margin-top: 20px; margin-bottom: 10px;">
+                <button>Buy Now</button>
               </div>
             </div>
           </div>
@@ -880,14 +892,14 @@
                       >Detailed Exterior Assessment</span
                     >
                   </div>
+                  <div onclick="handleCompleteCareNavigate()" class="service-more-btn" style="margin-top: 20px; margin-bottom: 10px;">
+                    <button>Buy Now</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <span class="circle-animation-b" id="header-circle"></span>
-        </div>
-        <div class="service-more-btn">
-          <button>Buy Now</button>
         </div>
       </div>
     </div>
