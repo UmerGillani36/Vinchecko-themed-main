@@ -49,7 +49,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    <script>
+    <!-- <script>
       const handleBasicNavigate = () => {
         window.location.href = "https://buy.stripe.com/5kAbKG4WP5PlfUk28d";
       };
@@ -59,7 +59,46 @@
       const handleCompleteCareNavigate = () => {
         window.location.href = "https://buy.stripe.com/6oEaGCfBt0v137y8wD";
       };
+      </script> -->
+
+    <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/668bb5a4eaf3bd8d4d196aeb/1i28rr3tj';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
       </script>
+      <!--End of Tawk.to Script-->
+
+      <style>
+        .loaders {
+            display: none;
+            border: 3px solid #f3f3f3; /* Light grey */
+            border-top: 3px solid #EE6C4D; /* Blue */
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            animation: spin 1s linear infinite;
+            margin: auto;
+            position: absolute;
+            top: 0; left: 80px; right: 0; bottom: 0;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .form_action_container {
+            position: relative;
+        }
+    </style>
+
   </head>
 
   <body>
@@ -145,7 +184,7 @@
         </nav>
       </header>
       <section id="top" class="slider_section long_section">
-        <div class="heroContainer">
+        <div class="heroContainer" id="buy">
           <div class="row">
             <div class="col-md-5">
               <div class="detail-box">
@@ -196,6 +235,7 @@
                           </div>
                           <div class="form_action_container">
                               <button class="form_action" id="pay-button">Pay</button>
+                              <div class="loaders" id="loaders"></div>
                           </div>
                       </div>
                   </div>
@@ -577,8 +617,8 @@
                   </div>
                 </div>
               </div>
-              <div onclick="handleBasicNavigate()" class="service-more-btn" style="margin-top: 20px; margin-bottom: 10px;">
-                <button>Buy Now</button>
+              <div class="service-more-btn" style="margin-top: 20px; margin-bottom: 10px;">
+                <a href="#buy"><button>Buy Now</button></a>
               </div>
             </div>
           </div>
@@ -708,7 +748,7 @@
                 </div>
               </div>
               <div onclick="handlePremiumNavigate()" class="service-more-btn" style="margin-top: 20px; margin-bottom: 10px;">
-                <button>Buy Now</button>
+                <a href="#buy"><button>Buy Now</button></a>
               </div>
             </div>
           </div>
@@ -854,7 +894,7 @@
                     >
                   </div>
                   <div onclick="handleCompleteCareNavigate()" class="service-more-btn" style="margin-top: 20px; margin-bottom: 10px;">
-                    <button>Buy Now</button>
+                    <a href="#buy"><button>Buy Now</button></a>
                   </div>
                 </div>
               </div>
@@ -1555,7 +1595,7 @@
     <!-- Footer End -->
 
     <!-- Back to top button -->
-    <div class="back-to-top">
+    <div class="back-to-top" style="margin-right: 120px;">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
         <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
         <path
